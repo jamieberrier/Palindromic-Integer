@@ -9,10 +9,6 @@ class Solution {
   solve(num) {
       const reverseNum = parseInt(Array.from(String(num), Number).reverse().join(""))
   
-      if(num === reverseNum) {
-          return true
-      } else {
-          return false
-      }
+      return num === reverseNum
   }
 }
